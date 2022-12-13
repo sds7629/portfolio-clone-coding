@@ -1,5 +1,6 @@
 /*Global*/
 @import "nav.css";
+@import "home.css";
 
 :root{
     /* Color*/
@@ -83,4 +84,11 @@ a{
 ul{
     list-style: none;
     padding-left: 0px;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
