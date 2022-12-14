@@ -2,21 +2,24 @@
 @import "nav.css";
 @import "home.css";
 @import "about.css";
+@import "skill.css";
 
 :root{
     /* Color*/
 --color-white:#ffffff;
 --color-light-white:#eeeeee;
 --color-dark-white:#bdbdbd;
---color-lightblue: #add8e6;
+--color-green: #CCD6A6;
+--color-light-green:#DAE2B6;
 --color-black: #4d4d4d;
 --color-grey:#616161;
 --color-light-grey:#7c7979;
---color-aquamarine:#7fffd4;
---color-dark-slateblue:#483d8b;
---color-medium-purple:#9370db;
+--color-pastel-grey:#B2B2B2;
+--color-beige:#F4EAD5;
+--color-light-beige:#FFFBE9;
+--color-dark-beige: #8B7E74;
 --color-black:#000000;
---color-powderblue: #b0e0e6;
+
 
     /* Font size*/
 --font-large: 48px;
@@ -49,8 +52,11 @@
 .section{
     padding: 50px;
     text-align: center; 
-    max-width: 1200px;
     margin: auto;
+}
+
+.section__container{
+    max-width: 1200px;
 }
 
 
