@@ -1,13 +1,21 @@
 /* Navbar */
 #navbar{
+    position: fixed;
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    background-color: var(--color-light-green);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+    transition: all var(--animation-duration) ease-in-out;
 }
 
+#navbar.navbar--dark{
+    background-color: var(--color-pastel-grey);
+    padding: 8px;
+    opacity: 0.7;
+}
 .navbar__menu{
     display: flex
 }
@@ -29,7 +37,7 @@
 }
 
 .navbar__menu__item:hover{
-    background-color: var(--color-powderblue);
+    background-color: var(--color-pastel-grey);
 }
 
 .navbar__toggle-btn{
