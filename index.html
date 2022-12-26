@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/8cff7363d4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +20,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="main.js" defer></script>
   </head>
   <body>
     <!-- Navvar -->
@@ -30,11 +30,11 @@
           <a href="#">Jinwoo</a>
         </div>
         <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">Work</li>
-          <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">Work</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
 
         <!-- Toggle button-->
