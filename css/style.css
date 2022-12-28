@@ -115,6 +115,26 @@ button{
     outline: none;
 }
 
+/*Scroll btn*/
+.scroll__up-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.scroll__up-btn.visible{
+    opacity: 1;
+    pointer-events: auto;
+}
 /*For below 768px screen width */
 @media screen and (max-width: 768px){
     .navbar__toggle-btn{
