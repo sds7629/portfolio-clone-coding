@@ -95,6 +95,13 @@ workBtnContainer.addEventListener('click', (e) => {
     if(filter == null){
         return;
     }
+
+    //Remove selection
+    const active= document.querySelector('.category__btn.selectied')
+    active.classList.remove('selectied');
+    const target = e.target.nodeName === 'BUTTON' ? e.target:e.target.parentNode;
+    target.classList.add('selectied');
+
     projectContainer.classList.add('anim-out');
     setTimeout(()=>{
         projects.forEach((project) => {

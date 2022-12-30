@@ -25,6 +25,7 @@
     padding: 8px 12px;
     margin: 0px 4px;
     cursor: pointer;
+    border: 2px solid transparent;
     border-radius: var(--size-border-radius);
 }
 
@@ -33,11 +34,9 @@
     font-weight: var(--weight-semi-bold);
 }
 
-.navbar__menu__item.active{
-    border: 2px solid var(--color-white);
-}
 
 .navbar__menu__item:hover{
+    border: 2px solid var(--color-white);
     background-color: var(--color-pastel-grey);
 }
 

@@ -10,13 +10,13 @@
     margin: 40px;
 }
 
-.category__btn.active,
+.category__btn.selectied,
 .category__btn:hover{
     background-color: var(--color-dark-beige);
     color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selectied .category__count,
 .category__btn:hover .category__count{
     opacity: 1;
 }
