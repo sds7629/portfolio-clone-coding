@@ -20,7 +20,6 @@ navbarMenu.addEventListener('click',(event)=>{
 
     const targetTo = event.target;
     const linkTo = targetTo.dataset.link;
-
     if(linkTo == null){
         return;
     }
@@ -78,7 +77,62 @@ arrowBtn.addEventListener('click', () =>{
     scrollIntoView('#home');
 });
 
+
+//ScrollIntoView 
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:'smooth'});
 }
+
+
+//Work clicked move 
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null){
+        return;
+    }
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=>{
+        projects.forEach((project) => {
+            if(filter === '*' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            }else{
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    }, 300);
+});
+
+
+/** 
+const categoryBtn = document.querySelector('.work__categories');
+const projectOpa = document.querySelectorAll('.project');
+const frontOpa = document.querySelectorAll('.front__end');
+categoryBtn.addEventListener('click', (event) =>{
+    const categoryTarget = event.target;
+    const categoryTargetTo = categoryTarget.dataset.link;
+    
+    if(categoryTargetTo == null){
+        return;
+    }
+    else if(categoryTargetTo == '.project'){
+        projectOpa[0].classList.add('category__opacity');
+        projectOpa[1].classList.add('category__opacity');
+        projectOpa[2].classList.add('category__opacity');
+        projectOpa[3].classList.add('category__opacity');
+        projectOpa[4].classList.add('category__opacity');
+        projectOpa[5].classList.add('category__opacity');
+        projectOpa[6].classList.add('category__opacity');
+        projectOpa[7].classList.add('category__opacity');
+    }
+    else if(categoryTargetTo == '.front__end'){
+        frontOpa[0].classList.add('category__opacity');
+        frontOpa[1].classList.add('category__opacity');
+    }
+});
+*/
