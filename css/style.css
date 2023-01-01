@@ -11,6 +11,7 @@
 --color-white:#ffffff;
 --color-light-white:#eeeeee;
 --color-dark-white:#bdbdbd;
+--color-orange: #f29886;
 --color-green: #CCD6A6;
 --color-light-green:#DAE2B6;
 --color-black: #4d4d4d;
@@ -144,6 +145,11 @@ button{
     #navbar{
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-dark-beige);
+    }
+
+    #navbar.navbar--dark{
+        padding:16px;
     }
 
     .navbar__menu{

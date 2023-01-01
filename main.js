@@ -23,8 +23,16 @@ navbarMenu.addEventListener('click',(event)=>{
     if(linkTo == null){
         return;
     }
-    
-   scrollIntoView(linkTo);
+
+    navbarMenu.classList.remove('open');
+    scrollIntoView(linkTo);
+});
+
+//navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () =>{
+   navbarMenu.classList.toggle('open');
+
 });
 
 //contact me clicked move

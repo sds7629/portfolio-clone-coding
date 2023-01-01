@@ -40,6 +40,10 @@
     background-color: var(--color-pastel-grey);
 }
 
+.navbar__menu.open{
+    display: block;
+}
+
 .navbar__toggle-btn{
     position: absolute;
     top:24px;
