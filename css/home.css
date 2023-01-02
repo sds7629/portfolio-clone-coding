@@ -28,6 +28,9 @@
     color: var(--color-white);
 }
 
+.home__contact:hover{
+    background-color: var(--color-grey);
+}
 .home__container{
     transition: all var(--animation-duration) ease-out;
 }

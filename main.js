@@ -50,23 +50,11 @@ contactBtn.addEventListener('click', (event) => {
 
 //scroll opcity
 
-const homeScroll = document.querySelectorAll('.home__container');
-const homeScrollElement = document.querySelector('#home');
-const homeHeight = homeScrollElement.getBoundingClientRect().height;
+const homeScroll = document.querySelector('.home__container');
+const homeHeight = homeScroll.getBoundingClientRect().height;
 document.addEventListener('scroll', ()=>{
     const homePercent = window.scrollY / homeHeight;
-    if(homePercent >= 0 && homePercent < 1){
-        homeScroll[0].style.opacity = 1 - homePercent;
-    }
-    else if(homePercent >= 1 && homePercent < 2){
-        homeScroll[1].style.opacity = 2 - homePercent;
-    }
-    else if(homePercent >= 2 && homePercent < 3){
-        homeScroll[2].style.opacity = 2.8- homePercent;
-    }
-    else if(homePercent >= 3 && homePercent < 4){
-        homeScroll[3].style.opacity = 3.7 - homePercent;
-    }
+    homeScroll.style.opacity = 1 - homePercent;
 });
 
 //show Arrow Button
