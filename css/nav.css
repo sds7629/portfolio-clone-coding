@@ -29,6 +29,10 @@
     border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item.active{
+    border: 2px solid var(--color-white);
+}
+
 .navbar__logo{
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
